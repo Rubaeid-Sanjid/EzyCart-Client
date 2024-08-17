@@ -13,7 +13,6 @@ const Main = () => {
   const [brand, setBrand] = useState("");
   const [category, setCategory] = useState("");
   const [priceRange, setPriceRange] = useState("");
-  console.log(brand, category, priceRange);
 
   const numberOfItemsPerPage = 6;
 
@@ -25,17 +24,28 @@ const Main = () => {
   }
 
   useEffect(() => {
+    const priceSplit = priceRange.split("-");
+    const minPrice = priceSplit[0];
+    const maxPrice = priceSplit[1];
+
     fetch(
       `http://localhost:5000/products?page=${
         currentPage - 1
-      }&items=${numberOfItemsPerPage}&search=${searchText}`
+      }&items=${numberOfItemsPerPage}&search=${searchText}&brand=${brand}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`
     )
       .then((res) => res.json())
       .then((data) => {
         setProducts(data.products);
         setTotalProducts(data.totalProducts);
       });
-  }, [currentPage, numberOfItemsPerPage, searchText]);
+  }, [
+    currentPage,
+    numberOfItemsPerPage,
+    searchText,
+    brand,
+    category,
+    priceRange,
+  ]);
 
   const handlePrevBtn = () => {
     if (currentPage > 1) {
