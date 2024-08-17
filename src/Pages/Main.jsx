@@ -5,8 +5,6 @@ import Card from "../Components/Card";
 const Main = () => {
   const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [prevPage, setPrevPage] = useState(1);
-  const [nextPage, setNextPage] = useState(1);
 
   const totalProducts = products.length;
   const numberOfItemsPerPage = 6;
@@ -20,11 +18,21 @@ const Main = () => {
   console.log(pages);
 
   useEffect(() => {
-    fetch("products.json")
+    fetch(`http://localhost:5000/products?page=${currentPage}&items=${numberOfItemsPerPage}`)
       .then((res) => res.json())
       .then((data) => setProducts(data));
-  }, []);
+  }, [currentPage, numberOfItemsPerPage]);
 
+  const handlePrevBtn = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+  const handleNextBtn = () => {
+    if (currentPage < pages.length - 1) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
   return (
     <div className="container mx-auto px-3 md:px-6 lg:px-12">
       <h1 className="text-3xl font-bold text-blue-600 my-8">EzyCart</h1>
@@ -35,16 +43,21 @@ const Main = () => {
       </div>
       <h3>{currentPage}</h3>
       <div className="text-center my-8">
-        <button className="btn">Prev</button>
+        <button className="btn" onClick={handlePrevBtn}>
+          Prev
+        </button>
         {pages.map((page) => (
           <button
+            key={page}
             onClick={() => setCurrentPage(page)}
             className={`${currentPage === page && "bg-orange-500"} btn mx-1`}
           >
             {page}
           </button>
         ))}
-        <button className="btn">Next</button>
+        <button className="btn" onClick={handleNextBtn}>
+          Next
+        </button>
       </div>
     </div>
   );
