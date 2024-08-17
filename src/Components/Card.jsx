@@ -44,7 +44,7 @@ const Card = ({ product }) => {
         </div>
         <div className="card-actions justify-between items-center mt-auto">
           <h3 className="text-2xl font-semibold text-orange-500">$ {Price}</h3>
-          <button className="btn btn-primary">Buy Now</button>
+          <button className="btn bg-orange-500 text-white">Buy Now</button>
         </div>
       </div>
     </div>

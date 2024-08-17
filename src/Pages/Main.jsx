@@ -51,19 +51,27 @@ const Main = () => {
       </div>
 
       <div className="text-center my-8">
-        <button className="btn" onClick={handlePrevBtn}>
+        <button
+          className="btn"
+          onClick={handlePrevBtn}
+          disabled={currentPage === 1}
+        >
           Prev
         </button>
         {pages.map((page) => (
           <button
             key={page}
             onClick={() => setCurrentPage(page)}
-            className={`${currentPage === page && "bg-orange-500"} btn mx-1`}
+            className={`${currentPage === page && "bg-orange-500 text-white"} btn mx-1`}
           >
             {page}
           </button>
         ))}
-        <button className="btn" onClick={handleNextBtn}>
+        <button
+          className="btn"
+          disabled={currentPage === pages.length}
+          onClick={handleNextBtn}
+        >
           Next
         </button>
       </div>
