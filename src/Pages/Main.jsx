@@ -9,6 +9,12 @@ const Main = () => {
 
   const [searchText, setSearchText] = useState("");
 
+  // For filtering
+  const [brand, setBrand] = useState("");
+  const [category, setCategory] = useState("");
+  const [priceRange, setPriceRange] = useState("");
+  console.log(brand, category, priceRange);
+
   const numberOfItemsPerPage = 6;
 
   const totalNumberOfPages = Math.ceil(totalProducts / numberOfItemsPerPage);
@@ -45,13 +51,13 @@ const Main = () => {
     <div className="container mx-auto px-3 md:px-6 lg:px-12">
       <h1 className="text-3xl font-bold text-orange-500 my-8">EzyCart</h1>
 
-      {/* Filtering section */}
+      {/* Search section */}
       <div className="my-8">
         <div className="flex items-center">
           <input
             type="text"
             placeholder="Search"
-            className="input input-bordered input-warning w-full max-w-xs"
+            className="input input-bordered w-full max-w-xs"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
@@ -60,6 +66,64 @@ const Main = () => {
           />
           {/* <button className="btn bg-orange-500 text-white">Search</button> */}
         </div>
+      </div>
+
+      {/* Filter section */}
+      <div className="my-8 flex gap-6">
+        {/* brand options */}
+        <select
+          className="select select-bordered w-full max-w-xs"
+          value={brand}
+          onChange={(e) => {
+            setBrand(e.target.value);
+            setCurrentPage(1);
+          }}
+        >
+          <option value="">Select Brand Name</option>
+          {[...new Set(products.map((product) => product.Brand_Name))].map(
+            (brand, index) => (
+              <option key={index} value={brand}>
+                {brand}
+              </option>
+            )
+          )}
+        </select>
+
+        {/*category options */}
+        <select
+          className="select select-bordered w-full max-w-xs"
+          value={category}
+          onChange={(e) => {
+            setCategory(e.target.value);
+            setCurrentPage(1);
+          }}
+        >
+          <option value="">Select Category</option>
+          {[...new Set(products.map((product) => product.Category))].map(
+            (category, index) => (
+              <option key={index} value={category}>
+                {category}
+              </option>
+            )
+          )}
+        </select>
+
+        {/* Price range options */}
+        <select
+          className="select select-bordered w-full max-w-xs"
+          value={priceRange}
+          onChange={(e) => {
+            setPriceRange(e.target.value);
+            setCurrentPage(1);
+          }}
+        >
+          <option value="">Price Range</option>
+          <option value="0-50">0-50</option>
+          <option value="51-100">51-100</option>
+          <option value="101-200">101-200</option>
+          <option value="201-500">201-500</option>
+          <option value="500+">500+</option>
+        </select>
       </div>
 
       {/* Card section */}
