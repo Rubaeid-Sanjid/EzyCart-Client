@@ -4,9 +4,10 @@ import Card from "../Components/Card";
 
 const Main = () => {
   const [products, setProducts] = useState([]);
+  const [totalProducts, setTotalProducts] = useState(0);
+
   const [currentPage, setCurrentPage] = useState(1);
 
-  const totalProducts = products.length;
   const numberOfItemsPerPage = 6;
 
   const totalNumberOfPages = Math.ceil(totalProducts / numberOfItemsPerPage);
@@ -18,9 +19,16 @@ const Main = () => {
   console.log(pages);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/products?page=${currentPage}&items=${numberOfItemsPerPage}`)
+    fetch(
+      `http://localhost:5000/products?page=${
+        currentPage - 1
+      }&items=${numberOfItemsPerPage}`
+    )
       .then((res) => res.json())
-      .then((data) => setProducts(data));
+      .then((data) => {
+        setProducts(data.products);
+        setTotalProducts(data.totalProducts);
+      });
   }, [currentPage, numberOfItemsPerPage]);
 
   const handlePrevBtn = () => {
@@ -41,7 +49,7 @@ const Main = () => {
           <Card key={index} product={product}></Card>
         ))}
       </div>
-      <h3>{currentPage}</h3>
+
       <div className="text-center my-8">
         <button className="btn" onClick={handlePrevBtn}>
           Prev
