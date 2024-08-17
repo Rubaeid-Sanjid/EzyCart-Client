@@ -8,7 +8,6 @@ const Main = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const [searchText, setSearchText] = useState("");
-  console.log(searchText);
 
   const numberOfItemsPerPage = 6;
 

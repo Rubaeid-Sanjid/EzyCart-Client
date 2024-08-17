@@ -8,6 +8,7 @@ const Card = ({ product }) => {
   const {
     Product_Name,
     Product_Image,
+    Brand_Name,
     Description,
     Price,
     Category,
@@ -36,7 +37,10 @@ const Card = ({ product }) => {
             <h2 className="card-title">{Product_Name}</h2>
             <Rating style={{ maxWidth: 120 }} value={Ratings} readOnly />
           </div>
-          <h3 className="font-medium text-neutral-400">{dateTime}</h3>
+          <h3 className="font-medium text-neutral-400 mb-2">{dateTime}</h3>
+          <h3 className="text-lg border-t-2 py-2">
+            <span className="font-semibold">Brand Name:</span> {Brand_Name}
+          </h3>
           <h5 className="text-lg">{Description}</h5>
           <div className="card-actions my-5">
             <div className="badge badge-outline">{Category}</div>
