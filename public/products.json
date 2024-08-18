@@ -222,7 +222,7 @@
   {
     "Product_Name": "Portable Power Bank",
     "Brand_Name": "PowerPlus",
-    "Product_Image": "https://example.com/images/portable_power_bank.jpg",
+    "Product_Image": "https://i.ibb.co/jHkczSY/Portable-Power-Bank.webp",
     "Description": "High-capacity portable power bank with fast charging for multiple devices.",
     "Price": 39.99,
     "Category": "Accessories",
@@ -232,7 +232,7 @@
   {
     "Product_Name": "Air Purifier",
     "Brand_Name": "PureAir",
-    "Product_Image": "https://example.com/images/air_purifier.jpg",
+    "Product_Image": "https://i.ibb.co/LSgDS0X/Air-Purifier.jpg",
     "Description": "HEPA air purifier with real-time air quality monitoring.",
     "Price": 129.99,
     "Category": "Home Appliances",
@@ -242,7 +242,7 @@
   {
     "Product_Name": "Smart Plugs",
     "Brand_Name": "PlugSmart",
-    "Product_Image": "https://example.com/images/smart_plugs.jpg",
+    "Product_Image": "https://i.ibb.co/25VrrNb/Smart-Plugs.jpg",
     "Description": "Wi-Fi-enabled smart plugs for remote control of household devices.",
     "Price": 29.99,
     "Category": "Home Automation",
@@ -252,7 +252,7 @@
   {
     "Product_Name": "Electric Pressure Cooker",
     "Brand_Name": "CookMaster",
-    "Product_Image": "https://example.com/images/electric_pressure_cooker.jpg",
+    "Product_Image": "https://i.ibb.co/2NF1FLW/Electric-Pressure-Cooker.jpg",
     "Description": "Multi-function electric pressure cooker with preset cooking programs.",
     "Price": 89.99,
     "Category": "Kitchen Appliances",
@@ -262,7 +262,7 @@
   {
     "Product_Name": "Drone with Camera",
     "Brand_Name": "SkyView",
-    "Product_Image": "https://example.com/images/drone_with_camera.jpg",
+    "Product_Image": "https://i.ibb.co/Y2Vr94h/Drone-with-Camera.jpg",
     "Description": "Foldable drone with 1080p camera and GPS-assisted flight.",
     "Price": 249.99,
     "Category": "Electronics",
@@ -272,7 +272,7 @@
   {
     "Product_Name": "Wireless Keyboard",
     "Brand_Name": "TypeEase",
-    "Product_Image": "https://example.com/images/wireless_keyboard.jpg",
+    "Product_Image": "https://i.ibb.co/frNM1y7/Wireless-Keyboard.jpg",
     "Description": "Compact wireless keyboard with multi-device pairing.",
     "Price": 39.99,
     "Category": "Accessories",
@@ -282,7 +282,7 @@
   {
     "Product_Name": "Cordless Vacuum Cleaner",
     "Brand_Name": "CleanMax",
-    "Product_Image": "https://example.com/images/cordless_vacuum_cleaner.jpg",
+    "Product_Image": "https://i.ibb.co/WsCWSNS/Cordless-Vacuum-Cleaner.jpg",
     "Description": "Lightweight cordless vacuum cleaner with powerful suction and long battery life.",
     "Price": 199.99,
     "Category": "Home Appliances",
@@ -292,7 +292,7 @@
   {
     "Product_Name": "Smart Light Switch",
     "Brand_Name": "SwitchSmart",
-    "Product_Image": "https://example.com/images/smart_light_switch.jpg",
+    "Product_Image": "https://i.ibb.co/x1d8G4w/Smart-Light-Switch.jpg",
     "Description": "Wi-Fi-enabled smart light switch with voice control compatibility.",
     "Price": 49.99,
     "Category": "Home Automation",
@@ -302,7 +302,7 @@
   {
     "Product_Name": "Electric Blanket",
     "Brand_Name": "WarmCozy",
-    "Product_Image": "https://example.com/images/electric_blanket.jpg",
+    "Product_Image": "https://i.ibb.co/vBvQGk0/Electric-Blanket.jpg",
     "Description": "Electric blanket with adjustable heat settings and auto shut-off.",
     "Price": 79.99,
     "Category": "Home Comfort",
@@ -312,7 +312,7 @@
   {
     "Product_Name": "Robot Mop",
     "Brand_Name": "MopBot",
-    "Product_Image": "https://example.com/images/robot_mop.jpg",
+    "Product_Image": "https://i.ibb.co/SJxyN0t/Robot-Mop.jpg",
     "Description": "Automatic robot mop with smart navigation and app control.",
     "Price": 229.99,
     "Category": "Home Appliances",
@@ -322,7 +322,7 @@
   {
     "Product_Name": "LED Desk Lamp",
     "Brand_Name": "BrightLight",
-    "Product_Image": "https://example.com/images/led_desk_lamp.jpg",
+    "Product_Image": "https://i.ibb.co/wcZH1nH/LED-Desk-Lamp.jpg",
     "Description": "LED desk lamp with adjustable brightness and color temperature settings.",
     "Price": 49.99,
     "Category": "Home Lighting",
@@ -332,7 +332,7 @@
   {
     "Product_Name": "Smart Garden",
     "Brand_Name": "GreenThumb",
-    "Product_Image": "https://example.com/images/smart_garden.jpg",
+    "Product_Image": "https://i.ibb.co/fx24pj7/Smart-Garden.jpg",
     "Description": "Indoor smart garden with automated watering and grow lights.",
     "Price": 159.99,
     "Category": "Home Automation",
@@ -342,7 +342,7 @@
   {
     "Product_Name": "Electric Scooter",
     "Brand_Name": "RideFast",
-    "Product_Image": "https://example.com/images/electric_scooter.jpg",
+    "Product_Image": "https://i.ibb.co/cC9tthC/Electric-Scooter.webp",
     "Description": "Foldable electric scooter with a top speed of 20 mph and long-range battery.",
     "Price": 499.99,
     "Category": "Outdoor Equipment",
@@ -352,7 +352,7 @@
   {
     "Product_Name": "3D Printer",
     "Brand_Name": "PrintTech",
-    "Product_Image": "https://example.com/images/3d_printer.jpg",
+    "Product_Image": "https://i.ibb.co/C9S8jf4/3-D-Printer.jpg",
     "Description": "High-precision 3D printer with easy-to-use software and fast print speeds.",
     "Price": 799.99,
     "Category": "Electronics",
@@ -362,7 +362,7 @@
   {
     "Product_Name": "Smart Mirror",
     "Brand_Name": "ReflectTech",
-    "Product_Image": "https://example.com/images/smart_mirror.jpg",
+    "Product_Image": "https://i.ibb.co/fxKD2yx/smart-mirror.jpg",
     "Description": "Wi-Fi-enabled smart mirror with built-in touch display and voice assistant compatibility.",
     "Price": 249.99,
     "Category": "Home Automation",
@@ -372,7 +372,7 @@
   {
     "Product_Name": "Smart Scale",
     "Brand_Name": "FitTrack",
-    "Product_Image": "https://example.com/images/smart_scale.jpg",
+    "Product_Image": "https://i.ibb.co/QNRfDb2/Smart-Scale.jpg",
     "Description": "Bluetooth smart scale with body composition analysis and fitness tracking app.",
     "Price": 69.99,
     "Category": "Health",
@@ -382,7 +382,7 @@
   {
     "Product_Name": "Portable Air Conditioner",
     "Brand_Name": "CoolBreeze",
-    "Product_Image": "https://example.com/images/portable_air_conditioner.jpg",
+    "Product_Image": "https://i.ibb.co/ZJrKjVt/Portable-Air-Conditioner.jpg",
     "Description": "Portable air conditioner with remote control and energy-efficient cooling.",
     "Price": 349.99,
     "Category": "Home Appliances",
@@ -392,7 +392,7 @@
   {
     "Product_Name": "Home Security System",
     "Brand_Name": "SafeHome",
-    "Product_Image": "https://example.com/images/home_security_system.jpg",
+    "Product_Image": "https://i.ibb.co/N7tc9Xf/Home-Security-System.webp",
     "Description": "Comprehensive home security system with sensors, cameras, and 24/7 monitoring.",
     "Price": 399.99,
     "Category": "Home Security",
@@ -402,7 +402,7 @@
   {
     "Product_Name": "Waterproof Bluetooth Speaker",
     "Brand_Name": "WaveSound",
-    "Product_Image": "https://example.com/images/waterproof_bluetooth_speaker.jpg",
+    "Product_Image": "https://i.ibb.co/G3ytTF7/Waterproof-Bluetooth-Speaker.jpg",
     "Description": "Rugged waterproof Bluetooth speaker with a 12-hour battery life and deep bass.",
     "Price": 79.99,
     "Category": "Electronics",
@@ -412,7 +412,7 @@
   {
     "Product_Name": "Electric Pressure Washer",
     "Brand_Name": "PowerClean",
-    "Product_Image": "https://example.com/images/electric_pressure_washer.jpg",
+    "Product_Image": "https://i.ibb.co/NnRbNX7/Electric-Pressure-Washer.webp",
     "Description": "High-power electric pressure washer with adjustable nozzle settings.",
     "Price": 179.99,
     "Category": "Outdoor Equipment",
@@ -422,7 +422,7 @@
   {
     "Product_Name": "Cordless Hair Clipper",
     "Brand_Name": "TrimPro",
-    "Product_Image": "https://example.com/images/cordless_hair_clipper.jpg",
+    "Product_Image": "https://i.ibb.co/QcsqXr4/Cordless-Hair-Clipper.png",
     "Description": "Rechargeable cordless hair clipper with precision blades and multiple guard sizes.",
     "Price": 59.99,
     "Category": "Personal Care",
@@ -432,7 +432,7 @@
   {
     "Product_Name": "Smart Coffee Maker",
     "Brand_Name": "BrewSmart",
-    "Product_Image": "https://example.com/images/smart_coffee_maker.jpg",
+    "Product_Image": "https://i.ibb.co/ZHLk9Rr/Smart-Coffee-Maker.jpg",
     "Description": "Wi-Fi-enabled smart coffee maker with app control and customizable brew settings.",
     "Price": 149.99,
     "Category": "Kitchen Appliances",
@@ -442,61 +442,11 @@
   {
     "Product_Name": "Fitness Jump Rope",
     "Brand_Name": "FitRope",
-    "Product_Image": "https://example.com/images/fitness_jump_rope.jpg",
+    "Product_Image": "https://i.ibb.co/pLzc0m3/Fitness-Jump-Rope.jpg",
     "Description": "Adjustable fitness jump rope with digital display for tracking jumps and calories burned.",
     "Price": 29.99,
     "Category": "Fitness",
     "Ratings": 4.4,
     "Product_Creation_date": "2024-01-24T12:00:00Z"
-  },
-  {
-    "Product_Name": "Smart Light Strip",
-    "Brand_Name": "GlowLine",
-    "Product_Image": "https://example.com/images/smart_light_strip.jpg",
-    "Description": "Wi-Fi-enabled smart light strip with customizable color options and music sync.",
-    "Price": 49.99,
-    "Category": "Home Lighting",
-    "Ratings": 4.5,
-    "Product_Creation_date": "2024-01-20T14:00:00Z"
-  },
-  {
-    "Product_Name": "Automatic Pet Feeder",
-    "Brand_Name": "PetFeedPro",
-    "Product_Image": "https://example.com/images/automatic_pet_feeder.jpg",
-    "Description": "Automatic pet feeder with portion control and scheduling via app.",
-    "Price": 99.99,
-    "Category": "Pet Care",
-    "Ratings": 4.6,
-    "Product_Creation_date": "2024-01-15T09:00:00Z"
-  },
-  {
-    "Product_Name": "Smart Baby Monitor",
-    "Brand_Name": "BabyWatch",
-    "Product_Image": "https://example.com/images/smart_baby_monitor.jpg",
-    "Description": "Wi-Fi-enabled baby monitor with HD video, motion detection, and night vision.",
-    "Price": 159.99,
-    "Category": "Baby Products",
-    "Ratings": 4.7,
-    "Product_Creation_date": "2024-01-10T14:00:00Z"
-  },
-  {
-    "Product_Name": "Electric Griddle",
-    "Brand_Name": "GrillEase",
-    "Product_Image": "https://example.com/images/electric_griddle.jpg",
-    "Description": "Non-stick electric griddle with adjustable temperature control for cooking.",
-    "Price": 79.99,
-    "Category": "Kitchen Appliances",
-    "Ratings": 4.6,
-    "Product_Creation_date": "2024-01-05T12:00:00Z"
-  },
-  {
-    "Product_Name": "Smart Water Bottle",
-    "Brand_Name": "HydroSmart",
-    "Product_Image": "https://example.com/images/smart_water_bottle.jpg",
-    "Description": "Bluetooth smart water bottle with hydration reminders and temperature display.",
-    "Price": 49.99,
-    "Category": "Fitness",
-    "Ratings": 4.5,
-    "Product_Creation_date": "2024-01-01T09:00:00Z"
   }
 ]
