@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Card from "../Components/Card";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 const Main = () => {
   const [products, setProducts] = useState([]);
@@ -64,6 +65,7 @@ const Main = () => {
   return (
     <div>
       <Navbar></Navbar>
+
       <div className="container mx-auto px-3 md:px-6 lg:px-12">
         {/* Search section */}
         <div className="my-8">
@@ -191,6 +193,7 @@ const Main = () => {
           </button>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
