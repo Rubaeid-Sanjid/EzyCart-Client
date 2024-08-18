@@ -4,7 +4,7 @@ import Main from "../Pages/Main";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/main",
     element: <Main></Main>,
   },
 //   {
@@ -12,7 +12,7 @@ export const router = createBrowserRouter([
 //     element: <Login></Login>,
 //   },
   {
-    path: "/registration",
+    path: "/",
     element: <Registration></Registration>,
   },
 ]);
