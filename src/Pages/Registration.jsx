@@ -1,7 +1,7 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import registerImg from "../assets/Register.png";
 import { AuthContext } from "../Components/AuthProvider";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ImSpinner9 } from "react-icons/im";
 import Swal from "sweetalert2";
 const Registration = () => {
@@ -32,7 +32,7 @@ const Registration = () => {
               showConfirmButton: false,
               timer: 1500,
             });
-            navigate("/main");
+            navigate("/");
           });
         }
       })
@@ -109,6 +109,12 @@ const Registration = () => {
                     <button className="btn bg-orange-600 text-white">Register</button>
                 )}
               </div>
+              <h4 className="text-center">
+                Already have an account ?{" "}
+                <Link to={"/"} className="text-orange-600 font-semibold">
+                  Login
+                </Link>
+              </h4>
           </form>
         </div>
       </div>
