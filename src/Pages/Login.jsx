@@ -1,12 +1,13 @@
 import { Link, useNavigate } from "react-router-dom";
 import loginImg from "../assets/login.jpg";
+import googleLogo from "../assets/google-logo-image.png";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Components/AuthProvider";
 import { ImSpinner9 } from "react-icons/im";
 import Swal from "sweetalert2";
 
 const Login = () => {
-  const { loginUser } = useContext(AuthContext);
+  const { loginUser, googleLogin } = useContext(AuthContext);
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -39,6 +40,24 @@ const Login = () => {
         setLoading(false);
       });
   };
+
+  const handleGoogleLogin = ()=>{
+    googleLogin()
+      .then((result) => {
+        console.log(result.user);
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "You are Logged In",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        navigate("/main");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  }
   return (
     <>
       <div className="my-8 p-3">
@@ -97,6 +116,13 @@ const Login = () => {
               </div>
               {error && <h3 className="text-center text-red-600">{error}</h3>}
               <div className="form-control mt-3">
+                <button
+                  onClick={handleGoogleLogin}
+                  className="w-full px-4 py-2 border flex justify-center gap-2 rounded-lg mb-3"
+                >
+                  <img className="w-6 h-6" src={googleLogo} alt="google logo" />
+                  <span>Login with Google</span>
+                </button>
                 {loading ? (
                   <button className="btn bg-orange-600 text-lg">
                     <ImSpinner9 className="animate-spin" />
