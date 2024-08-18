@@ -62,7 +62,7 @@ const Main = () => {
   };
   return (
     <div className="container mx-auto px-3 md:px-6 lg:px-12">
-      <h1 className="text-3xl font-bold text-orange-500 my-8">EzyCart</h1>
+      <h1 className="lg:text-5xl text-3xl font-bold text-orange-500 my-8">EzyCart</h1>
 
       {/* Search section */}
       <div className="my-8">
@@ -82,7 +82,7 @@ const Main = () => {
       </div>
 
       {/* Filter section */}
-      <div className="my-8 flex gap-6">
+      <div className="my-8 flex gap-6 flex-col lg:flex-row">
         {/* brand options */}
         <select
           className="select select-bordered w-full max-w-xs"

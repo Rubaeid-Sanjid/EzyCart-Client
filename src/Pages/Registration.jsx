@@ -44,9 +44,9 @@ const Registration = () => {
   };
   return (
     <div className="hero bg-base-200 min-h-screen">
-      <div className="hero-content gap-8">
+      <div className="hero-content gap-8 flex-col lg:flex-row">
         <div className="text-center lg:text-left">
-          <h1 className="lg:text-5xl text-3xl font-bold text-orange-500 my-8">
+          <h1 className="text-center lg:text-5xl text-3xl font-bold text-orange-500 my-8">
             EzyCart
           </h1>
           <div>
@@ -55,7 +55,7 @@ const Registration = () => {
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
           <form className="card-body" onSubmit={handleRegistration}>
-            <h1 className="text-5xl font-bold text-center mb-5">
+            <h1 className="text-3xl lg:text-5xl font-bold text-center mb-5">
               Register now!
             </h1>
             <div className="form-control">

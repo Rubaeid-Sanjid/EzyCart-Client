@@ -40,69 +40,87 @@ const Login = () => {
       });
   };
   return (
-    <div className="hero bg-base-200 min-h-screen">
-      <div className="hero-content gap-8 flex-1">
-        <div className="text-center lg:text-left">
-          <div className="flex justify-center items-center w-1/2">
-            <img src={loginImg} alt="" className=""/>
+    <>
+      <div className="my-8 p-3">
+        <h1 className="text-center lg:text-5xl text-3xl font-bold text-orange-500 mb-3">
+          EzyCart
+        </h1>
+        <h3 className="text-center font-semibold text-lg">
+          Find Everything You Need in Just a Few Clicks
+        </h3>
+      </div>
+      <div className="hero">
+        <div className="hero-content flex-col lg:flex-row items-center justify-center gap-12">
+          <div className="text-center lg:text-left">
+            <div className="flex justify-center items-center w-full">
+              <img
+                src={loginImg}
+                alt=""
+                className="object-cover w-full max-w-md"
+              />
+            </div>
+          </div>
+          <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form className="card-body" onSubmit={handleLogin}>
+              <h1 className="text-3xl lg:text-5xl font-bold text-center mb-5">
+                Login now!
+              </h1>
+
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Email</span>
+                </label>
+                <input
+                  type="email"
+                  placeholder="email"
+                  name="email"
+                  className="input input-bordered"
+                  required
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Password</span>
+                </label>
+                <input
+                  type="password"
+                  placeholder="password"
+                  name="password"
+                  className="input input-bordered"
+                  required
+                />
+                <label className="label">
+                  <a href="#" className="label-text-alt link link-hover">
+                    Forgot password?
+                  </a>
+                </label>
+              </div>
+              {error && <h3 className="text-center text-red-600">{error}</h3>}
+              <div className="form-control mt-3">
+                {loading ? (
+                  <button className="btn bg-orange-600 text-lg">
+                    <ImSpinner9 className="animate-spin" />
+                  </button>
+                ) : (
+                  <button className="btn bg-orange-600 text-white">
+                    Login
+                  </button>
+                )}
+              </div>
+              <h4 className="text-center">
+                Don't have an account?{" "}
+                <Link
+                  to={"/registration"}
+                  className="text-orange-600 font-semibold"
+                >
+                  Register
+                </Link>
+              </h4>
+            </form>
           </div>
         </div>
-        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <form className="card-body" onSubmit={handleLogin}>
-            <h1 className="text-5xl font-bold text-center mb-5">Login now!</h1>
-
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Email</span>
-              </label>
-              <input
-                type="email"
-                placeholder="email"
-                name="email"
-                className="input input-bordered"
-                required
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Password</span>
-              </label>
-              <input
-                type="password"
-                placeholder="password"
-                name="password"
-                className="input input-bordered"
-                required
-              />
-              <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
-              </label>
-            </div>
-            {error && <h3 className="text-center text-red-600">{error}</h3>}
-            <div className="form-control mt-3">
-              {loading ? (
-                <button className="btn bg-orange-600 text-lg">
-                  <ImSpinner9 className="animate-spin" />
-                </button>
-              ) : (
-                <button className="btn bg-orange-600 text-white">Login</button>
-              )}
-            </div>
-            <h4 className="text-center">
-              Don't have an account ?{" "}
-              <Link
-                to={"/registration"}
-                className="text-orange-600 font-semibold"
-              >
-                Register
-              </Link>
-            </h4>
-          </form>
-        </div>
       </div>
-    </div>
+    </>
   );
 };
 
