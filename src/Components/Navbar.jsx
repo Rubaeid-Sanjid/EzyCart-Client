@@ -71,7 +71,7 @@ const Navbar = () => {
         <div>
           {user ? (
             <div className="flex flex-col lg:flex-row items-center ml-3">
-              <div className="flex items-center">
+              <div className="flex items-center flex-col lg:flex-row gap-2">
                 <h3 className="text-xl mx-3">
                   Welcome,{" "}
                   <span className="font-semibold">{user.displayName}</span>
@@ -87,7 +87,7 @@ const Navbar = () => {
 
               <button
                 onClick={handleLogout}
-                className="btn btn-xs w-full md:w-2/5 lg:btn-md ml-2 bg-orange-500 text-white border-none"
+                className="btn btn-xs w-full md:w-2/5 lg:btn-md ml-2 bg-orange-500 text-white border-none mt-2 lg:mt-0"
               >
                 Logout
               </button>
