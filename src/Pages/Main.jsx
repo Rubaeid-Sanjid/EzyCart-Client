@@ -14,6 +14,8 @@ const Main = () => {
   const [category, setCategory] = useState("");
   const [priceRange, setPriceRange] = useState("");
 
+  const [sortBy, setSortBy] = useState("");
+
   const numberOfItemsPerPage = 6;
 
   const totalNumberOfPages = Math.ceil(totalProducts / numberOfItemsPerPage);
@@ -31,7 +33,7 @@ const Main = () => {
     fetch(
       `http://localhost:5000/products?page=${
         currentPage - 1
-      }&items=${numberOfItemsPerPage}&search=${searchText}&brand=${brand}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}`
+      }&items=${numberOfItemsPerPage}&search=${searchText}&brand=${brand}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}&sortBy=${sortBy}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -45,6 +47,7 @@ const Main = () => {
     brand,
     category,
     priceRange,
+    sortBy
   ]);
 
   const handlePrevBtn = () => {
@@ -133,6 +136,21 @@ const Main = () => {
           <option value="101-200">101-200</option>
           <option value="201-500">201-500</option>
           <option value="500+">500+</option>
+        </select>
+
+        {/* Sorting options */}
+        <select
+          className="select select-bordered w-full max-w-xs"
+          value={sortBy}
+          onChange={(e) => {
+            setSortBy(e.target.value);
+            setCurrentPage(1);
+          }}
+        >
+          <option value="">Sort By</option>
+          <option value="priceLowToHigh">Price: Low to High</option>
+          <option value="priceHighToLow">Price: High to Low</option>
+          <option value="newestFirst">Date Added: Newest First</option>
         </select>
       </div>
 
