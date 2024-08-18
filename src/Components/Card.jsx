@@ -25,10 +25,11 @@ const Card = ({ product }) => {
   const dateTime = Product_Creation_date.split("T")[0] + ", " + localTime;
   return (
     <div className="card card-compact bg-base-100 shadow-xl h-full">
-      <figure>
+      <figure className="h-48 w-full overflow-hidden flex items-center justify-center">
         <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
+          src={Product_Image}
+          alt={Product_Name}
+          className="w-full h-full object-contain"
         />
       </figure>
       <div className="card-body flex flex-col justify-between">
@@ -55,6 +56,8 @@ const Card = ({ product }) => {
   );
 };
 
-Card.propTypes = {};
+Card.propTypes = {
+  product: PropTypes.object,
+};
 
 export default Card;
