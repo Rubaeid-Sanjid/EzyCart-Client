@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import { AuthContext } from "./AuthProvider";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Navbar = () => {
   const { user, logOutUser } = useContext(AuthContext);
-
+  const navigate = useNavigate();
   const navlink = (
     <>
       <NavLink to={"/main"} className={"my-2 lg:my-0 mx-2 text-black text-lg"}>
@@ -20,10 +20,11 @@ const Navbar = () => {
         Swal.fire({
           position: "top-end",
           icon: "success",
-          title: "Sign-out successful",
+          title: "Logout successful",
           showConfirmButton: false,
           timer: 1500,
         });
+        navigate("/");
       })
       .catch((error) => {
         console.log(error);
@@ -31,7 +32,7 @@ const Navbar = () => {
   };
 
   return (
-    <div >
+    <div>
       <div className="navbar lg:px-12 bg-orange-200">
         <div className="navbar-start ">
           <div className="dropdown z-10">
