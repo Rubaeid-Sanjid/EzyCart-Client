@@ -33,7 +33,7 @@ const Main = () => {
     const maxPrice = priceSplit[1];
 
     fetch(
-      `http://localhost:5000/products?page=${
+      `https://ezy-cart-server.vercel.app/products?page=${
         currentPage - 1
       }&items=${numberOfItemsPerPage}&search=${searchText}&brand=${brand}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}&sortBy=${sortBy}`
     )

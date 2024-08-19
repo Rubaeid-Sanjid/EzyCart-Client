@@ -43,8 +43,8 @@ const Login = () => {
 
   const handleGoogleLogin = ()=>{
     googleLogin()
-      .then((result) => {
-        console.log(result.user);
+      .then(() => {
+        // console.log(result.user);
         Swal.fire({
           position: "top-end",
           icon: "success",
