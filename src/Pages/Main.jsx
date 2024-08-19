@@ -62,6 +62,15 @@ const Main = () => {
       setCurrentPage(currentPage + 1);
     }
   };
+
+  const handleReset = () => {
+    setSearchText("");
+    setBrand("");
+    setCategory("");
+    setPriceRange("");
+    setSortBy("");
+    setCurrentPage(1);
+  };
   return (
     <div>
       <Navbar></Navbar>
@@ -69,7 +78,7 @@ const Main = () => {
       <div className="container mx-auto px-3 md:px-6 lg:px-12">
         {/* Search section */}
         <div className="my-8">
-          <div className="flex items-center">
+          <div className="flex items-center justify-between">
             <input
               type="text"
               placeholder="Search"
@@ -80,7 +89,12 @@ const Main = () => {
                 setCurrentPage(1);
               }}
             />
-            {/* <button className="btn bg-orange-500 text-white">Search</button> */}
+            <button
+              onClick={handleReset}
+              className="btn bg-orange-500 text-white"
+            >
+              Reset All
+            </button>
           </div>
         </div>
 
